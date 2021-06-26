@@ -19,7 +19,7 @@
  preloader -->
 
         <div id="pre-loader">
-            <img src="assets/images/pre-loader/loader-01.svg" alt="">
+            <img src="{{ asset('assets/images/pre-loader/loader-01.svg') }}" alt="">
         </div>
 
         <!--=================================
@@ -516,7 +516,7 @@
                 </div>
                 <div class="col-xl-4 mb-30">
                     <div class="card card-statistics h-100">
-                        <div class="p-4 text-center bg" style="background: url(images/bg/01.jpg);">
+                        <div class="p-4 text-center bg" style="background: {{ asset('images/bg/01.jp') }};">
                             <h5 class="mb-70 text-white position-relative">Michael Bean </h5>
                             <div class="btn-group info-drop">
                                 <button type="button" class="dropdown-toggle-split text-white" data-toggle="dropdown"
@@ -535,7 +535,7 @@
                         </div>
                         <div class="card-body text-center position-relative">
                             <div class="avatar-top">
-                                <img class="img-fluid w-25 rounded-circle " src="images/team/13.jpg" alt="">
+                                <img class="img-fluid w-25 rounded-circle " src="{{ asset('images/team/13.jpg') }}" alt="">
                             </div>
                             <div class="row">
                                 <div class="col-sm-4 mt-30">

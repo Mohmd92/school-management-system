@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'ar',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -175,6 +175,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Yoeunes\Toastr\ToastrServiceProvider::class
     ],
 
     /*

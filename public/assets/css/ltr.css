@@ -20229,8 +20229,8 @@ ul.list-unstyled li {
   -moz-transition: all 0.9s ease;
   -ms-transition: all 0.9s ease;
   -o-transition: all 0.9s ease;
-  transition: all 0.9s ease;
-  width: 100%; }
+  transition: all 0.9s ease; }
+
   .content-wrapper .page-title {
     padding: 0px; }
   .content-wrapper .breadcrumb {
