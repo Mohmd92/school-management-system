@@ -17,19 +17,37 @@
                         </ul>
                     </li>
                     <!-- menu title -->
-                    <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Components </li>
+                    {{-- <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Components </li> --}}
                     <!-- menu item Elements-->
+
+                    <!-- Grades -->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#grades-menu">
                             <div class="pull-left"><i class="ti-palette"></i><span
                                     class="right-nav-text">{{ trans('main_sidebar.Grades') }}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="elements" class="collapse" data-parent="#sidebarnav">
+                        <ul id="grades-menu" class="collapse" data-parent="#sidebarnav">
                             <li><a href="{{ route('grades.index') }}">{{ trans('main_sidebar.Grades_List') }}</a></li>
                         </ul>
                     </li>
+
+                    <!-- Classrooms -->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#classrooms-menu">
+                            <div class="pull-left"><i class="ti-palette"></i><span
+                                    class="right-nav-text">{{ trans('main_sidebar.Classes_List') }}</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="classrooms-menu" class="collapse" data-parent="#sidebarnav">
+                            <li><a href="{{ route('classrooms.index') }}">{{ trans('main_sidebar.Classrooms_List') }}</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- menu title -->
+                    <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Widgets, Forms & Tables </li>
                     <!-- menu item todo-->
                     <li>
                         <a href="todo-list.html"><i class="ti-menu-alt"></i><span class="right-nav-text">Todo
@@ -40,8 +58,6 @@
                         <a href="mail-box.html"><i class="ti-email"></i><span class="right-nav-text">Mail
                                 box</span> <span class="badge badge-pill badge-warning float-right mt-1">HOT</span> </a>
                     </li>
-                    <!-- menu title -->
-                    <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Widgets, Forms & Tables </li>
                     <!-- menu item Widgets-->
                     <li>
                         <a href="widgets.html"><i class="ti-blackboard"></i><span class="right-nav-text">Widgets</span>

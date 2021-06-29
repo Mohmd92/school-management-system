@@ -190,14 +190,14 @@
                             @endforeach
                             </tbody>
 
-                            {{--                            <tfoot>--}}
-                            {{--                            <tr>--}}
-                            {{--                                <th>#</th>--}}
-                            {{--                                <th>{{ trans('grades.name') }}</th>--}}
-                            {{--                                <th>{{ trans('grades.notes') }}</th>--}}
-                            {{--                                <th>{{ trans('grades.processes') }}</th>--}}
-                            {{--                            </tr>--}}
-                            {{--                            </tfoot>--}}
+{{--                            <tfoot>--}}
+{{--                            <tr>--}}
+{{--                                <th>#</th>--}}
+{{--                                <th>{{ trans('grades.name') }}</th>--}}
+{{--                                <th>{{ trans('grades.notes') }}</th>--}}
+{{--                                <th>{{ trans('grades.processes') }}</th>--}}
+{{--                            </tr>--}}
+{{--                            </tfoot>--}}
                         </table>
                     </div>
                 </div>

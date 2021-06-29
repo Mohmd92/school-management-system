@@ -61,7 +61,7 @@ return [
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
-            // 'unix_socket' => env('UNIX_SOCKET', '/Applications/MAMP/tmp/mysql/mysql.sock')
+            'unix_socket' => env('UNIX_SOCKET', '/Applications/MAMP/tmp/mysql/mysql.sock')
         ],
 
         'pgsql' => [

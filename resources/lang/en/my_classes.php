@@ -2,8 +2,8 @@
 
 return [
     'title_page' => 'Classes',
-    'List_classes' => 'List Classes',
-    'add_class' => 'add class',
+    'List_classes' => 'Classes List',
+    'add_class' => 'Add Class',
     'edit_class'=> 'Edit Class',
     'delete_class'=> 'Delete Class',
     'delete_checkbox'=> 'Delete Selected',
@@ -12,8 +12,9 @@ return [
     'submit' => 'submit',
     'required_ar'=>'Please Enter The class Name in Arabic',
     'required_en'=>'Please Enter The class Name in English',
+    'Name_class'=>'Name',
     'Name_class_en'=>'Name class en',
-    'Name_Grade'=>'Name Grade',
+    'Name_Grade'=>'Grade Name',
     'add_row'=>'add row',
     'delete_row'=>'Delete row',
     'Processes'=>'Processes',

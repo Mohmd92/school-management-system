@@ -12,6 +12,7 @@ class Grade extends Model
     public $translatable = ['name'];
 
     protected $fillable = ['name', 'notes'];
+
     protected $table = 'grades';
     public $timestamps = true;
 }

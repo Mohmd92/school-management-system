@@ -1,9 +1,9 @@
-<?php 
+<?php
 
 namespace App\Http\Controllers\Grades;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreGrades;
+use App\Http\Requests\StoreGradesRequest;
 use App\Models\Grade;
 use Illuminate\Http\Request;
 
@@ -28,7 +28,7 @@ class GradesController extends Controller
    */
   public function create()
   {
-    
+
   }
 
   /**
@@ -36,7 +36,7 @@ class GradesController extends Controller
    *
    * @return Response
    */
-  public function store(StoreGrades $request)
+  public function store(StoreGradesRequest $request)
   {
       try {
           $validated = $request->validated();
@@ -61,7 +61,7 @@ class GradesController extends Controller
    */
   public function show($id)
   {
-    
+
   }
 
   /**
@@ -72,7 +72,7 @@ class GradesController extends Controller
    */
   public function edit($id)
   {
-    
+
   }
 
   /**
@@ -81,7 +81,7 @@ class GradesController extends Controller
    * @param  int  $id
    * @return Response
    */
-  public function update(StoreGrades $request)
+  public function update(StoreGradesRequest $request)
   {
       try {
 

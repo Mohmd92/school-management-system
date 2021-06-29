@@ -28,7 +28,7 @@
             <ul class="nav navbar-nav ml-auto">
                 <!-- Example single danger button -->
                 <div class="btn-group">
-                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ trans('main_header.language') }}
                     </button>
                     <div class="dropdown-menu">

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    @section('title')
+    {{ trans('main_sidebar.Dashboard') }}
+    @endsection
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +40,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h4 class="mb-0"> Dashboard</h4>
+                        <h4 class="mb-0"> {{ trans('main_sidebar.Dashboard') }}</h4>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right">
