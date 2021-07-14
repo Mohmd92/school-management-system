@@ -16,7 +16,7 @@ return [
     'Name_Section'=>'اسم القسم',
     'Name_Class'=>'اسم الصف',
     'Name_Teacher'=>'اسم المعلم',
-    'Status'=>'الحالة',
+    'Status'=>'نشط',
     'Status_Section_AC'=>'نشط',
     'Status_Section_No'=>'غير نشط',
     'delete_Grade_Error'=>'The Grade cannot be deleted because there are classes attached to it',

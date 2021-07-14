@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Classroom;
+use App\Models\Grade;
+use App\Models\Section;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -23,9 +26,7 @@ Route::group(['middleware' => ['guest']], function () {
     });
 });
 
-Route::group(
-    [
-        'prefix' => LaravelLocalization::setLocale(),
+Route::group(['prefix' => LaravelLocalization::setLocale(),
         'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'auth']
     ], function () { //...
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
@@ -40,5 +41,11 @@ Route::group(
         Route::post('delete_all', 'ClassroomController@delete_all')->name('delete_all');
 
         Route::post('filter_classes', 'ClassroomController@filter_classes')->name('filter_classes');
+    });
+
+    Route::group(['namespace' => 'Sections'], function () {
+        Route::resource('sections', 'SectionController');
+
+        Route::get('getGradeClasses/{grade_id}', 'SectionController@getGradeClasses')->name('getGradeClasses');
     });
 });

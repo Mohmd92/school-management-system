@@ -9,12 +9,12 @@
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard">
                             <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">{{ trans('main_sidebar.Dashboard') }}</span>
                             </div>
-                            <div class="pull-right"><i class="ti-plus"></i></div>
+{{--                            <div class="pull-right"><i class="ti-plus"></i></div>--}}
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="dashboard" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="#">Dashboard 01</a> </li>
-                        </ul>
+{{--                        <ul id="dashboard" class="collapse" data-parent="#sidebarnav">--}}
+{{--                            <li> <a href="#">Dashboard 01</a> </li>--}}
+{{--                        </ul>--}}
                     </li>
                     <!-- menu title -->
                     {{-- <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Components </li> --}}
@@ -43,6 +43,19 @@
                         </a>
                         <ul id="classrooms-menu" class="collapse" data-parent="#sidebarnav">
                             <li><a href="{{ route('classrooms.index') }}">{{ trans('main_sidebar.Classrooms_List') }}</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Sections -->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#sections-menu">
+                            <div class="pull-left"><i class="ti-palette"></i><span
+                                    class="right-nav-text">{{ trans('main_sidebar.Sections') }}</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="sections-menu" class="collapse" data-parent="#sidebarnav">
+                            <li><a href="{{ route('sections.index') }}">{{ trans('main_sidebar.Sections_List') }}</a></li>
                         </ul>
                     </li>
 

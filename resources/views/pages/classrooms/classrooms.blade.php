@@ -73,7 +73,9 @@
                             <tbody>
 
                             @if (isset($details))
-                                <?php $rooms = $details; ?>
+                                <?php if (!empty($details)) {
+                                    $rooms = $details;
+                                } ?>
 
                             @else
                                 <?php $rooms = $rooms; ?>
@@ -340,7 +342,7 @@
     <script type="text/javascript">
         $(function () {
             $("#btn_delete_all").click(function () {
-                var selected = new Array();
+                var selected = [];
                 $("#datatable input[type=checkbox]:checked").each(function () {
                     selected.push(this.value);
                 });

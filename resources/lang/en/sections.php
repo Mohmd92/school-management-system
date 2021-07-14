@@ -15,7 +15,7 @@ return [
     'Name_Section'=>'Name Section',
     'Name_Class'=>'Name Class',
     'Name_Teacher'=>'Name Teacher',
-    'Status'=>'Status',
+    'Status'=>'Active',
     'Status_Section_AC'=>'Active',
     'Status_Section_No'=>'Not Active',
     'delete_Grade_Error'=>'The Grade cannot be deleted because there are classes attached to it',
