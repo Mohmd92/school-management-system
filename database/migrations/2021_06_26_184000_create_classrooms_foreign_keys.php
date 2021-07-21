@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Schema;
 
-class CreateForeignKeys extends Migration {
+class CreateClassroomsForeignKeys extends Migration {
 
 	public function up()
 	{
@@ -18,7 +18,7 @@ class CreateForeignKeys extends Migration {
 
 	public function down()
 	{
-		Schema::table('Classrooms', function(Blueprint $table) {
+		Schema::table('classrooms', function(Blueprint $table) {
 			$table->dropForeign('classrooms_grade_id_foreign');
 		});
 	}

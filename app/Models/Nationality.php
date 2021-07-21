@@ -13,6 +13,8 @@ class Nationality extends Model
     public $translatable = ['name'];
 
     protected $fillable = ['name'];
+    
+    public $timestamps = false;
 
     protected $table = 'nationalities';
 }

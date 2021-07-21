@@ -59,27 +59,41 @@
                         </ul>
                     </li>
 
+                    <!-- Sections -->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#parents-menu">
+                            <div class="pull-left"><i class="ti-palette"></i><span
+                                    class="right-nav-text">{{ trans('main_sidebar.Parents') }}</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="parents-menu" class="collapse" data-parent="#sidebarnav">
+{{--                            <li><a href="{{ route('sections.index') }}">{{ trans('main_sidebar.Parents_List') }}</a></li>--}}
+                            <li><a href="{{ url('add_parent') }}">{{ trans('main_sidebar.Add_Parent') }}</a></li>
+                        </ul>
+                    </li>
+
                     <!-- menu title -->
                     <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Widgets, Forms & Tables </li>
                     <!-- menu item todo-->
                     <li>
-                        <a href="todo-list.html"><i class="ti-menu-alt"></i><span class="right-nav-text">Todo
+                        <a href="#"><i class="ti-menu-alt"></i><span class="right-nav-text">Todo
                                 list</span> </a>
                     </li>
                     <!-- menu item mailbox-->
                     <li>
-                        <a href="mail-box.html"><i class="ti-email"></i><span class="right-nav-text">Mail
+                        <a href="#"><i class="ti-email"></i><span class="right-nav-text">Mail
                                 box</span> <span class="badge badge-pill badge-warning float-right mt-1">HOT</span> </a>
                     </li>
                     <!-- menu item Widgets-->
                     <li>
-                        <a href="widgets.html"><i class="ti-blackboard"></i><span class="right-nav-text">Widgets</span>
+                        <a href="#"><i class="ti-blackboard"></i><span class="right-nav-text">Widgets</span>
                             <span class="badge badge-pill badge-danger float-right mt-1">59</span> </a>
                     </li>
                     <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">More Pages</li>
                     <!-- menu item maps-->
                     <li>
-                        <a href="maps.html"><i class="ti-location-pin"></i><span class="right-nav-text">maps</span>
+                        <a href="#"><i class="ti-location-pin"></i><span class="right-nav-text">maps</span>
                             <span class="badge badge-pill badge-success float-right mt-1">06</span></a>
                     </li>
                     <!-- menu item Multi level-->

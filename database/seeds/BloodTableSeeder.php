@@ -25,7 +25,7 @@ class BloodTableSeeder extends Seeder
 
         foreach ($types as $type)
         {
-            Blood::create(['type' => $type]);
+            Blood::create(['name' => $type]);
         }
     }
 }

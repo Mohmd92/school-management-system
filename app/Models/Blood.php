@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Blood extends Model
 {
     //
-    protected $fillable = ['type'];
+
+    protected $fillable = ['name'];
+
+    public $timestamps = false;
 
     protected $table = 'blood_types';
 }

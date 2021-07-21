@@ -31,21 +31,42 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     ], function () { //...
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
+    //============================== Grades ==============================
     Route::group(['namespace' => 'Grades'], function () {
         Route::resource('grades', 'GradesController');
     });
 
+    //============================== Classrooms ==============================
     Route::group(['namespace' => 'Classrooms'], function () {
         Route::resource('classrooms', 'ClassroomController');
 
         Route::post('delete_all', 'ClassroomController@delete_all')->name('delete_all');
-
         Route::post('filter_classes', 'ClassroomController@filter_classes')->name('filter_classes');
     });
 
+    //============================== Sections ==============================
     Route::group(['namespace' => 'Sections'], function () {
         Route::resource('sections', 'SectionController');
 
         Route::get('getGradeClasses/{grade_id}', 'SectionController@getGradeClasses')->name('getGradeClasses');
     });
+
+    Route::view('add_parent', 'livewire.show_form');
 });
+
+/*
+ Route::prefix('api')->group(function () {
+
+    Route::get('grades', function () {
+        return Grade::all();
+    });
+
+    Route::get('classrooms', function () {
+        return Classroom::all();
+    });
+
+    Route::get('sections', function () {
+        return Section::with('grade')->get();
+    });
+});
+*/

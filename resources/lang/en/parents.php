@@ -1,19 +1,19 @@
 <?php
 
 return [
-    'add_parent' => 'add parent',
+    'add_parent' => 'Add Parent',
     'Step1' => 'Father information',
     'Step2' => 'Mother information',
     'Step3' => 'Confirm information',
     'Email' => 'Email',
     'Password' => 'Password',
-    'Name_Father' => 'Father Name Arabic',
+    'Name_Father' => 'Father Name',
     'Name_Father_en' => 'Father Name English',
-    'Job_Father' => 'Job Title Arabic',
+    'Job_Father' => 'Job Title',
     'Job_Father_en' => 'Job Title English',
     'National_ID_Father' => 'Identification Number',
     'Passport_ID_Father' => 'Passport Number',
-    'Phone_Father' => 'Telephone Number',
+    'Phone_Father' => 'Mobile Number',
     'Nationality_Father_id' => 'Nationality',
     'Blood_Type_Father_id' => 'Blood Type',
     'Religion_Father_id' => 'Religion',
@@ -24,7 +24,7 @@ return [
     'Job_Mother_en' => 'Job Title English',
     'National_ID_Mother' => 'Identification Number',
     'Passport_ID_Mother' => 'Passport Number',
-    'Phone_Mother' => 'Telephone Number',
+    'Phone_Mother' => 'Mobile Number',
     'Address_Mother' => 'Address Mother',
     'Next' => 'Next',
     'Back' => 'Back',
@@ -32,5 +32,4 @@ return [
     'Choose' => 'Choose',
     'Attachments' => 'Attachments',
     'Processes' => 'Processes',
-
 ];

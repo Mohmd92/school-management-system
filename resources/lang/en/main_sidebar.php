@@ -8,4 +8,7 @@ return [
     'Classes_List' => 'Classes',
     'Sections' => 'Sections',
     'Sections_List' => 'Grade Sections',
+    'Parents'=>'Parents',
+    'Parents_List'=>'List Parents',
+    'Add_Parent'=>'Add Parent',
 ];
