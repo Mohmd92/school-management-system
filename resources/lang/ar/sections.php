@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'title_page' => 'الاقسام',
-    'List_Grade' => 'List_Grade',
-    'add_section' => 'اضافة قسم',
+    'title_page' => 'الأقسام',
+    'List_Grade' => 'قائمة المراحل الدراسية',
+    'add_section' => 'إضافة قسم',
     'edit_Section'=> 'تعديل قسم',
     'delete_Section'=> 'حذف قسم',
-    'Warning_Section'=> 'هل انت متاكد من عملية الحذف',
+    'Warning_Section'=> 'هل انت متأكد من عملية الحذف',
     'Section_name_ar' => 'اسم القسم باللغة العربية',
     'Section_name_en' => 'اسم القسم باللغة الانجليزية',
     'Select_Grade' => '-- حدد المرحلة --',

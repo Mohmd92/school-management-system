@@ -11,4 +11,6 @@ return [
     'Parents'=>'أولياء الأمور',
     'Parents_List'=>'قائمة أولياء الأمور',
     'Add_Parent'=>'إضافة ولي أمر',
+    'Teachers'=>'المعلمين',
+    'Teachers_List' => 'قائمة المعلمين',
 ];

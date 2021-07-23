@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title_page' => 'sections',
-    'List_Grade' => 'List_Grade',
+    'title_page' => 'Sections',
+    'List_Grade' => 'Grade List',
     'add_section' => 'Add Section ',
     'edit_Section'=> 'Edit Section',
     'delete_Section'=> 'Delete Section',
@@ -10,11 +10,11 @@ return [
     'Section_name_ar' => 'Section name Ar',
     'Section_name_en' => 'Section name En',
     'Select_Grade' => '-- Select Grade --',
-    'Name_Grade' => 'Name Grade',
-    'submit' => 'submit',
-    'Name_Section'=>'Name Section',
-    'Name_Class'=>'Name Class',
-    'Name_Teacher'=>'Name Teacher',
+    'Name_Grade' => 'Grade Name',
+    'submit' => 'Submit',
+    'Name_Section'=>'Section Name',
+    'Name_Class'=>'Class Name',
+    'Name_Teacher'=>'Teacher Name',
     'Status'=>'Active',
     'Status_Section_AC'=>'Active',
     'Status_Section_No'=>'Not Active',
@@ -27,5 +27,4 @@ return [
     'Edit'=>'Edit',
     'Delete'=>'Delete',
     'Close' => 'Close',
-
 ];

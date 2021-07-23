@@ -14,7 +14,7 @@
 
 @section('PageTitle')
     {{ trans('sections.title_page') }}
-<!-- breadcrumb -->
+    <!-- breadcrumb -->
 @endsection
 
 @section('content')
@@ -155,7 +155,9 @@
                                                                                             <select name="grade_id"
                                                                                                     class="custom-select">
                                                                                                 @foreach ($grades_list as $grade)
-                                                                                                    <option @if($grade->id == $section->grade_id) selected @endif
+                                                                                                    <option
+                                                                                                        @if($grade->id == $section->grade_id) selected
+                                                                                                        @endif
                                                                                                         value="{{ $grade->id }}">
                                                                                                         {{ $grade->name }}
                                                                                                     </option>
@@ -170,7 +172,9 @@
                                                                                             <select name="classroom_id"
                                                                                                     class="custom-select">
                                                                                                 @foreach ($section->grade->classrooms as $classroom)
-                                                                                                    <option @if($classroom->id == $section->classroom_id) selected @endif
+                                                                                                    <option
+                                                                                                        @if($classroom->id == $section->classroom_id) selected
+                                                                                                        @endif
                                                                                                         value="{{ $classroom->id }}">
                                                                                                         {{ $classroom->name }}
                                                                                                     </option>
@@ -184,36 +188,42 @@
 
                                                                                                 <input
                                                                                                     type="checkbox"
-                                                                                                    @if ($section->status === 1) checked @endif
+                                                                                                    @if ($section->status === 1) checked
+                                                                                                    @endif
                                                                                                     class="form-check-input"
                                                                                                     name="status"
                                                                                                     id="exampleCheck1">
                                                                                                 <label
                                                                                                     class="form-check-label"
-                                                                                                    for="exampleCheck1">{{ trans('sections.Status') }}</label><br>
-
-                                                                                                    <!-- Teachers -->
-{{--                                                                                                <div class="col">--}}
-{{--                                                                                                    <label--}}
-{{--                                                                                                        for="inputName"--}}
-{{--                                                                                                        class="control-label">{{ trans('sections.Name_Teacher') }}</label>--}}
-{{--                                                                                                    <select multiple--}}
-{{--                                                                                                            name="teacher_id[]"--}}
-{{--                                                                                                            class="form-control"--}}
-{{--                                                                                                            id="exampleFormControlSelect2">--}}
-{{--                                                                                                        @foreach($section->teachers as $teacher)--}}
-{{--                                                                                                            <option--}}
-{{--                                                                                                                selected--}}
-{{--                                                                                                                value="{{$teacher['id']}}">{{$teacher['Name']}}</option>--}}
-{{--                                                                                                        @endforeach--}}
-
-{{--                                                                                                        @foreach($teachers as $teacher)--}}
-{{--                                                                                                            <option--}}
-{{--                                                                                                                value="{{$teacher->id}}">{{$teacher->Name}}</option>--}}
-{{--                                                                                                        @endforeach--}}
-{{--                                                                                                    </select>--}}
-{{--                                                                                                </div>--}}
+                                                                                                    for="exampleCheck1">{{ trans('sections.Status') }}</label>
                                                                                             </div>
+                                                                                        </div>
+                                                                                        <br>
+
+                                                                                        <!-- Teachers -->
+                                                                                        <div class="col">
+                                                                                            <label
+                                                                                                for="inputName"
+                                                                                                class="control-label">{{ trans('sections.Name_Teacher') }}</label>
+                                                                                            <select multiple
+                                                                                                    name="teacher_ids[]"
+                                                                                                    class="form-control"
+                                                                                                    id="exampleFormControlSelect2">
+                                                                                                @foreach($section->teachers as $teacher)
+                                                                                                    <option
+                                                                                                        selected
+                                                                                                        disabled
+                                                                                                        value="{{ $teacher->id }}">{{ $teacher->name }}
+                                                                                                        (Is selected
+                                                                                                        now)
+                                                                                                    </option>
+                                                                                                @endforeach
+
+                                                                                                @foreach($teachers as $teacher)
+                                                                                                    <option
+                                                                                                        value="{{ $teacher->id }}">{{ $teacher->name }}</option>
+                                                                                                @endforeach
+                                                                                            </select>
                                                                                         </div>
 
                                                                                     </div>
@@ -344,17 +354,17 @@
                                         </div>
                                         <br>
 
-                                        <!-- Teachers -->
-{{--                                        <div class="col">--}}
-{{--                                            <label for="inputName"--}}
-{{--                                                   class="control-label">{{ trans('sections.Name_Teacher') }}</label>--}}
-{{--                                            <select multiple name="teacher_id[]" class="form-control"--}}
-{{--                                                    id="exampleFormControlSelect2">--}}
-{{--                                                @foreach($teachers as $teacher)--}}
-{{--                                                    <option value="{{$teacher->id}}">{{$teacher->Name}}</option>--}}
-{{--                                                @endforeach--}}
-{{--                                            </select>--}}
-{{--                                        </div>--}}
+                                        <div class="col">
+                                            <label for="inputName"
+                                                   class="control-label">{{ trans('sections.Name_Teacher') }}</label>
+                                            <select multiple name="teacher_ids[]" class="form-control"
+                                                    id="exampleFormControlSelect2">
+                                                @foreach($teachers as $teacher)
+                                                    <option value="{{ $teacher->id }}">{{ $teacher->name }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+                                        <br>
 
                                     </div>
                                     <div class="modal-footer">

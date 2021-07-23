@@ -11,4 +11,6 @@ return [
     'Parents'=>'Parents',
     'Parents_List'=>'List Parents',
     'Add_Parent'=>'Add Parent',
+    'Teachers'=>'Teachers',
+    'Teachers_List' => 'Teachers List',
 ];

@@ -23,7 +23,7 @@
                     <!-- Grades -->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#grades-menu">
-                            <div class="pull-left"><i class="ti-palette"></i><span
+                            <div class="pull-left"><i class="fas fa-school"></i><span
                                     class="right-nav-text">{{ trans('main_sidebar.Grades') }}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
@@ -36,7 +36,7 @@
                     <!-- Classrooms -->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#classrooms-menu">
-                            <div class="pull-left"><i class="ti-palette"></i><span
+                            <div class="pull-left"><i class="fa fa-building"></i><span
                                     class="right-nav-text">{{ trans('main_sidebar.Classes_List') }}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
@@ -49,7 +49,7 @@
                     <!-- Sections -->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#sections-menu">
-                            <div class="pull-left"><i class="ti-palette"></i><span
+                            <div class="pull-left"><i class="fas fa-chalkboard"></i><span
                                     class="right-nav-text">{{ trans('main_sidebar.Sections') }}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
@@ -59,10 +59,10 @@
                         </ul>
                     </li>
 
-                    <!-- Sections -->
+                    <!-- Parents -->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#parents-menu">
-                            <div class="pull-left"><i class="ti-palette"></i><span
+                            <div class="pull-left"><i class="fas fa-user-tie"></i><span
                                     class="right-nav-text">{{ trans('main_sidebar.Parents') }}</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
@@ -70,6 +70,19 @@
                         <ul id="parents-menu" class="collapse" data-parent="#sidebarnav">
 {{--                            <li><a href="{{ route('sections.index') }}">{{ trans('main_sidebar.Parents_List') }}</a></li>--}}
                             <li><a href="{{ url('add_parent') }}">{{ trans('main_sidebar.Add_Parent') }}</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Teachers-->
+                    <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#Teachers-menu">
+                            <div class="pull-left"><i class="fas fa-chalkboard-teacher"></i><span
+                                    class="right-nav-text">{{ trans('main_sidebar.Teachers') }}</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="Teachers-menu" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{ route('teachers.index') }}">{{ trans('main_sidebar.Teachers_List') }}</a> </li>
                         </ul>
                     </li>
 

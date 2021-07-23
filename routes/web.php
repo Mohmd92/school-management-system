@@ -51,7 +51,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
         Route::get('getGradeClasses/{grade_id}', 'SectionController@getGradeClasses')->name('getGradeClasses');
     });
 
+    //==============================Parents============================
     Route::view('add_parent', 'livewire.show_form');
+
+    //==============================Teachers============================
+    Route::group(['namespace' => 'Teachers'], function () {
+        Route::resource('teachers', 'TeacherController');
+    });
 });
 
 /*
